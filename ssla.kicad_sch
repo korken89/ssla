@@ -22657,7 +22657,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Connector_IDC:IDC-Header_2x10_P2.54mm_Vertical_SMD"
+		(property "Footprint" "Connector_IDC:IDC-Header_2x10_P2.54mm_Vertical"
 			(at 273.05 133.35 0)
 			(effects
 				(font
@@ -22702,7 +22702,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C221051"
 			(at 273.05 133.35 0)
 			(effects
 				(font
@@ -26044,7 +26044,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Connector_IDC:IDC-Header_2x10_P2.54mm_Vertical_SMD"
+		(property "Footprint" "Connector_IDC:IDC-Header_2x10_P2.54mm_Vertical"
 			(at 273.05 72.39 0)
 			(effects
 				(font
@@ -26089,7 +26089,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C221051"
 			(at 273.05 72.39 0)
 			(effects
 				(font
@@ -45879,7 +45879,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Connector_IDC:IDC-Header_2x10_P2.54mm_Vertical_SMD"
+		(property "Footprint" "Connector_IDC:IDC-Header_2x10_P2.54mm_Vertical"
 			(at 273.05 102.87 0)
 			(effects
 				(font
@@ -45924,7 +45924,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C221051"
 			(at 273.05 102.87 0)
 			(effects
 				(font
