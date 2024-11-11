@@ -10917,6 +10917,7 @@
 	)
 	(label "IOB_108_SS"
 		(at 205.74 259.08 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11290,6 +11291,7 @@
 	)
 	(label "IOB_105_SDO"
 		(at 205.74 251.46 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11861,6 +11863,7 @@
 	)
 	(label "IOB_107_SCK"
 		(at 205.74 256.54 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12003,6 +12006,7 @@
 	)
 	(label "IOB_106_SDI"
 		(at 205.74 254 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12420,6 +12424,7 @@
 	)
 	(label "CDONE"
 		(at 236.22 163.83 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13475,6 +13480,7 @@
 	)
 	(label "~{CRESET}"
 		(at 205.74 163.83 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13589,7 +13595,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C307331"
 			(at 82.55 22.86 0)
 			(effects
 				(font
@@ -13751,7 +13757,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25076"
 			(at 288.29 125.73 0)
 			(effects
 				(font
@@ -14049,7 +14055,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25076"
 			(at 288.29 100.33 0)
 			(effects
 				(font
@@ -14347,7 +14353,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25076"
 			(at 288.29 105.41 0)
 			(effects
 				(font
@@ -14442,7 +14448,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25076"
 			(at 288.29 74.93 0)
 			(effects
 				(font
@@ -14608,7 +14614,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C307331"
 			(at 242.57 250.19 0)
 			(effects
 				(font
@@ -14866,7 +14872,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25076"
 			(at 288.29 82.55 0)
 			(effects
 				(font
@@ -15195,7 +15201,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25744"
 			(at 283.21 172.72 0)
 			(effects
 				(font
@@ -15360,7 +15366,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C307331"
 			(at 60.96 143.51 0)
 			(effects
 				(font
@@ -15551,7 +15557,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25076"
 			(at 288.29 138.43 0)
 			(effects
 				(font
@@ -15921,6 +15927,15 @@
 			)
 		)
 		(property "Description" "iCE40 HX FPGA, 7680 LUTs, 1.2V, BGA-121"
+			(at 393.7 199.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1521843"
 			(at 393.7 199.39 0)
 			(effects
 				(font
@@ -16374,7 +16389,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C307331"
 			(at 81.28 154.94 0)
 			(effects
 				(font
@@ -16631,7 +16646,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25076"
 			(at 260.35 52.07 0)
 			(effects
 				(font
@@ -16890,7 +16905,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25076"
 			(at 288.29 41.91 0)
 			(effects
 				(font
@@ -16984,7 +16999,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25076"
 			(at 260.35 115.57 0)
 			(effects
 				(font
@@ -17307,7 +17322,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25076"
 			(at 260.35 39.37 0)
 			(effects
 				(font
@@ -17404,7 +17419,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C307331"
 			(at 72.39 22.86 0)
 			(effects
 				(font
@@ -17594,7 +17609,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25076"
 			(at 260.35 64.77 0)
 			(effects
 				(font
@@ -17891,7 +17906,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25076"
 			(at 288.29 146.05 0)
 			(effects
 				(font
@@ -18284,7 +18299,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25076"
 			(at 260.35 138.43 0)
 			(effects
 				(font
@@ -18515,7 +18530,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25076"
 			(at 288.29 34.29 0)
 			(effects
 				(font
@@ -18609,7 +18624,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25076"
 			(at 260.35 41.91 0)
 			(effects
 				(font
@@ -19858,7 +19873,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25076"
 			(at 288.29 31.75 0)
 			(effects
 				(font
@@ -20154,7 +20169,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25076"
 			(at 260.35 130.81 0)
 			(effects
 				(font
@@ -20248,7 +20263,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25076"
 			(at 260.35 123.19 0)
 			(effects
 				(font
@@ -20557,6 +20572,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C2861750"
+			(at 52.07 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFPN" "TLV75533PDRV"
+			(at 52.07 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "ae0cb7fb-11fc-44c9-a7ab-1922d797e459")
 		)
@@ -20658,7 +20691,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25905"
 			(at 29.21 190.5 0)
 			(effects
 				(font
@@ -20849,7 +20882,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25076"
 			(at 260.35 135.89 0)
 			(effects
 				(font
@@ -20944,7 +20977,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25076"
 			(at 288.29 133.35 0)
 			(effects
 				(font
@@ -21270,7 +21303,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25076"
 			(at 288.29 54.61 0)
 			(effects
 				(font
@@ -21529,7 +21562,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25076"
 			(at 260.35 246.38 0)
 			(effects
 				(font
@@ -21691,7 +21724,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25076"
 			(at 288.29 69.85 0)
 			(effects
 				(font
@@ -21785,7 +21818,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25076"
 			(at 260.35 62.23 0)
 			(effects
 				(font
@@ -21962,7 +21995,7 @@
 				)
 			)
 		)
-		(property "Value" "10p"
+		(property "Value" "12p"
 			(at 69.8563 181.61 90)
 			(effects
 				(font
@@ -22015,7 +22048,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C1547"
 			(at 69.85 185.42 0)
 			(effects
 				(font
@@ -22112,7 +22145,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C23733"
 			(at 50.8 143.51 0)
 			(effects
 				(font
@@ -22206,7 +22239,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25076"
 			(at 260.35 105.41 0)
 			(effects
 				(font
@@ -23052,7 +23085,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C23733"
 			(at 252.73 250.19 0)
 			(effects
 				(font
@@ -23313,7 +23346,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25744"
 			(at 292.1 172.72 0)
 			(effects
 				(font
@@ -23546,7 +23579,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25933"
 			(at 78.74 243.84 0)
 			(effects
 				(font
@@ -23708,7 +23741,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25905"
 			(at 29.21 199.39 0)
 			(effects
 				(font
@@ -23803,7 +23836,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C307331"
 			(at 63.5 261.62 0)
 			(effects
 				(font
@@ -24110,7 +24143,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25076"
 			(at 260.35 256.54 0)
 			(effects
 				(font
@@ -24303,7 +24336,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C23733"
 			(at 64.77 62.23 0)
 			(effects
 				(font
@@ -25089,7 +25122,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25076"
 			(at 260.35 44.45 0)
 			(effects
 				(font
@@ -25320,7 +25353,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C307331"
 			(at 72.39 35.56 0)
 			(effects
 				(font
@@ -25415,7 +25448,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25076"
 			(at 288.29 102.87 0)
 			(effects
 				(font
@@ -25606,7 +25639,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C307331"
 			(at 321.31 173.99 0)
 			(effects
 				(font
@@ -25703,7 +25736,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C307331"
 			(at 60.96 154.94 0)
 			(effects
 				(font
@@ -25797,7 +25830,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25076"
 			(at 260.35 74.93 0)
 			(effects
 				(font
@@ -26207,7 +26240,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25744"
 			(at 243.84 152.4 0)
 			(effects
 				(font
@@ -26790,7 +26823,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25076"
 			(at 288.29 130.81 0)
 			(effects
 				(font
@@ -26953,7 +26986,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25076"
 			(at 288.29 52.07 0)
 			(effects
 				(font
@@ -27515,7 +27548,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C307331"
 			(at 64.77 217.17 0)
 			(effects
 				(font
@@ -27681,6 +27714,15 @@
 			)
 		)
 		(property "Description" "iCE40 HX FPGA, 7680 LUTs, 1.2V, BGA-121"
+			(at 220.98 254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1521843"
 			(at 220.98 254 0)
 			(effects
 				(font
@@ -28132,7 +28174,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25076"
 			(at 288.29 95.25 0)
 			(effects
 				(font
@@ -28429,7 +28471,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25076"
 			(at 288.29 135.89 0)
 			(effects
 				(font
@@ -28743,7 +28785,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFPN" ""
+		(property "MFPN" "USBLC6-2P6"
 			(at 58.42 228.6 0)
 			(effects
 				(font
@@ -28870,7 +28912,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C307331"
 			(at 81.28 143.51 0)
 			(effects
 				(font
@@ -29197,7 +29239,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C23733"
 			(at 64.77 95.25 0)
 			(effects
 				(font
@@ -29427,7 +29469,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25076"
 			(at 260.35 95.25 0)
 			(effects
 				(font
@@ -29661,7 +29703,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C23733"
 			(at 252.73 260.35 0)
 			(effects
 				(font
@@ -30160,7 +30202,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C258090"
 			(at 69.85 204.47 0)
 			(effects
 				(font
@@ -30321,7 +30363,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25076"
 			(at 260.35 133.35 0)
 			(effects
 				(font
@@ -30416,7 +30458,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25076"
 			(at 288.29 72.39 0)
 			(effects
 				(font
@@ -30648,7 +30690,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C307331"
 			(at 242.57 260.35 0)
 			(effects
 				(font
@@ -30742,7 +30784,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25076"
 			(at 260.35 31.75 0)
 			(effects
 				(font
@@ -31195,7 +31237,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C307331"
 			(at 41.91 35.56 0)
 			(effects
 				(font
@@ -31359,7 +31401,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25744"
 			(at 300.99 172.72 0)
 			(effects
 				(font
@@ -31548,7 +31590,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25076"
 			(at 260.35 34.29 0)
 			(effects
 				(font
@@ -31754,6 +31796,15 @@
 			)
 		)
 		(property "Description" "iCE40 HX FPGA, 7680 LUTs, 1.2V, BGA-121"
+			(at 345.44 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1521843"
 			(at 345.44 67.31 0)
 			(effects
 				(font
@@ -32339,7 +32390,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25076"
 			(at 260.35 85.09 0)
 			(effects
 				(font
@@ -32503,7 +32554,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C307331"
 			(at 62.23 22.86 0)
 			(effects
 				(font
@@ -32744,7 +32795,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFPN" ""
+		(property "MFPN" "E1SB24E000007E"
 			(at 78.74 191.77 0)
 			(effects
 				(font
@@ -32762,7 +32813,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C2689430"
 			(at 78.74 191.77 0)
 			(effects
 				(font
@@ -32840,6 +32891,15 @@
 			)
 		)
 		(property "Description" "Ferrite bead, small symbol"
+			(at 45.72 208.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C491490"
 			(at 45.72 208.28 0)
 			(effects
 				(font
@@ -32934,7 +32994,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25076"
 			(at 288.29 115.57 0)
 			(effects
 				(font
@@ -33029,7 +33089,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25076"
 			(at 288.29 107.95 0)
 			(effects
 				(font
@@ -33290,7 +33350,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C307331"
 			(at 91.44 154.94 0)
 			(effects
 				(font
@@ -33518,7 +33578,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25076"
 			(at 260.35 146.05 0)
 			(effects
 				(font
@@ -33682,7 +33742,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C23733"
 			(at 33.02 95.25 0)
 			(effects
 				(font
@@ -33777,7 +33837,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25076"
 			(at 288.29 46.99 0)
 			(effects
 				(font
@@ -33872,7 +33932,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25076"
 			(at 288.29 123.19 0)
 			(effects
 				(font
@@ -34035,7 +34095,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25076"
 			(at 288.29 62.23 0)
 			(effects
 				(font
@@ -34698,7 +34758,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25076"
 			(at 260.35 107.95 0)
 			(effects
 				(font
@@ -34795,7 +34855,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C307331"
 			(at 52.07 35.56 0)
 			(effects
 				(font
@@ -35571,7 +35631,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25076"
 			(at 260.35 113.03 0)
 			(effects
 				(font
@@ -35762,7 +35822,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25076"
 			(at 288.29 85.09 0)
 			(effects
 				(font
@@ -35924,7 +35984,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25076"
 			(at 260.35 100.33 0)
 			(effects
 				(font
@@ -36089,7 +36149,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C307331"
 			(at 76.2 208.28 0)
 			(effects
 				(font
@@ -36384,7 +36444,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25076"
 			(at 288.29 77.47 0)
 			(effects
 				(font
@@ -36577,7 +36637,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25933"
 			(at 68.58 243.84 0)
 			(effects
 				(font
@@ -37028,7 +37088,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25076"
 			(at 288.29 44.45 0)
 			(effects
 				(font
@@ -37257,7 +37317,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25076"
 			(at 260.35 54.61 0)
 			(effects
 				(font
@@ -37354,7 +37414,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25744"
 			(at 196.85 152.4 0)
 			(effects
 				(font
@@ -37515,7 +37575,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25076"
 			(at 260.35 46.99 0)
 			(effects
 				(font
@@ -37612,7 +37672,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C23733"
 			(at 31.75 22.86 0)
 			(effects
 				(font
@@ -37805,7 +37865,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C23733"
 			(at 31.75 35.56 0)
 			(effects
 				(font
@@ -38362,7 +38422,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C307331"
 			(at 91.44 143.51 0)
 			(effects
 				(font
@@ -38459,7 +38519,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C307331"
 			(at 71.12 154.94 0)
 			(effects
 				(font
@@ -38556,7 +38616,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C307331"
 			(at 41.91 22.86 0)
 			(effects
 				(font
@@ -38694,7 +38754,7 @@
 				)
 			)
 		)
-		(property "Value" "10p"
+		(property "Value" "12p"
 			(at 69.8563 194.31 90)
 			(effects
 				(font
@@ -38747,7 +38807,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C1547"
 			(at 69.85 198.12 0)
 			(effects
 				(font
@@ -38908,7 +38968,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25076"
 			(at 260.35 102.87 0)
 			(effects
 				(font
@@ -39369,7 +39429,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25076"
 			(at 288.29 39.37 0)
 			(effects
 				(font
@@ -39994,7 +40054,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C258090"
 			(at 171.45 148.59 0)
 			(effects
 				(font
@@ -40511,7 +40571,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C258090"
 			(at 35.56 71.12 0)
 			(effects
 				(font
@@ -40590,7 +40650,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFPN" ""
+		(property "MFPN" "CY7C68013A-56LTXC"
 			(at 106.68 220.98 0)
 			(effects
 				(font
@@ -40608,7 +40668,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C14912"
 			(at 106.68 220.98 0)
 			(effects
 				(font
@@ -41098,7 +41158,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25076"
 			(at 260.35 72.39 0)
 			(effects
 				(font
@@ -41327,7 +41387,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25076"
 			(at 288.29 143.51 0)
 			(effects
 				(font
@@ -41378,7 +41438,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Connector_IDC:IDC-Header_2x10_P2.54mm_Vertical_SMD"
+		(property "Footprint" "Connector_IDC:IDC-Header_2x10_P2.54mm_Vertical"
 			(at 273.05 41.91 0)
 			(effects
 				(font
@@ -41423,7 +41483,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C221051"
 			(at 273.05 41.91 0)
 			(effects
 				(font
@@ -41706,7 +41766,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25076"
 			(at 260.35 77.47 0)
 			(effects
 				(font
@@ -42221,7 +42281,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25076"
 			(at 260.35 125.73 0)
 			(effects
 				(font
@@ -42550,7 +42610,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C307331"
 			(at 92.71 22.86 0)
 			(effects
 				(font
@@ -42620,6 +42680,24 @@
 			)
 		)
 		(property "Description" "500mA Low Dropout Voltage Regulator, Fixed Output 1.2V, WSON6"
+			(at 52.07 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2866903"
+			(at 52.07 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFPN" "TLV75512PDRV"
 			(at 52.07 92.71 0)
 			(effects
 				(font
@@ -42796,7 +42874,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25076"
 			(at 260.35 143.51 0)
 			(effects
 				(font
@@ -43150,7 +43228,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25076"
 			(at 288.29 113.03 0)
 			(effects
 				(font
@@ -43219,6 +43297,15 @@
 			)
 		)
 		(property "Description" "iCE40 HX FPGA, 7680 LUTs, 1.2V, BGA-121"
+			(at 220.98 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1521843"
 			(at 220.98 189.23 0)
 			(effects
 				(font
@@ -43875,7 +43962,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C23733"
 			(at 33.02 62.23 0)
 			(effects
 				(font
@@ -44140,6 +44227,15 @@
 			)
 		)
 		(property "Description" "iCE40 HX FPGA, 7680 LUTs, 1.2V, BGA-121"
+			(at 372.11 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1521843"
 			(at 372.11 130.81 0)
 			(effects
 				(font
@@ -44689,7 +44785,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C307331"
 			(at 52.07 22.86 0)
 			(effects
 				(font
@@ -44853,7 +44949,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C307331"
 			(at 41.91 76.2 0)
 			(effects
 				(font
@@ -44948,7 +45044,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25076"
 			(at 288.29 92.71 0)
 			(effects
 				(font
@@ -45110,7 +45206,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25076"
 			(at 260.35 92.71 0)
 			(effects
 				(font
@@ -45271,7 +45367,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25076"
 			(at 260.35 69.85 0)
 			(effects
 				(font
@@ -45434,7 +45530,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25076"
 			(at 288.29 64.77 0)
 			(effects
 				(font
@@ -46138,7 +46234,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25076"
 			(at 260.35 82.55 0)
 			(effects
 				(font
@@ -46235,7 +46331,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C307331"
 			(at 71.12 143.51 0)
 			(effects
 				(font
@@ -46332,7 +46428,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C307331"
 			(at 62.23 35.56 0)
 			(effects
 				(font
