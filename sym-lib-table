@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "Lattice_ECP5_FPGA")(type "KiCad")(uri "${KIPRJMOD}/Lattice_ECP5_FPGA.kicad_sym")(options "")(descr ""))
+)
