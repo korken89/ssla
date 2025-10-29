@@ -681,6 +681,22 @@
     [
       "2e0ddbb6-d322-4cea-9b13-783b04160595",
       "Root"
+    ],
+    [
+      "604a9c8a-f123-43da-beb7-2831ec9e4d8a",
+      "IO Port 1"
+    ],
+    [
+      "7b384247-aee3-4dd4-a97d-25d981af56d4",
+      "IO Port 2"
+    ],
+    [
+      "ce89ad91-22eb-444e-a9cc-c9108b1f0d21",
+      "Power"
+    ],
+    [
+      "c26708a4-6d93-4869-859d-a864def60f33",
+      "Ethernet"
     ]
   ],
   "text_variables": {}
