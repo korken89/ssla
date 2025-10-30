@@ -544,25 +544,25 @@
           "group_by": false,
           "label": "Datasheet",
           "name": "Datasheet",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
           "label": "Footprint",
           "name": "Footprint",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
           "label": "Qty",
           "name": "${QUANTITY}",
-          "show": true
+          "show": false
         },
         {
           "group_by": true,
           "label": "DNP",
           "name": "${DNP}",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
@@ -683,11 +683,11 @@
       "Root"
     ],
     [
-      "604a9c8a-f123-43da-beb7-2831ec9e4d8a",
+      "9d1c2f5f-275a-4aa0-81bb-3f9469cfb4b2",
       "IO Port 1"
     ],
     [
-      "7b384247-aee3-4dd4-a97d-25d981af56d4",
+      "6e0ab4a5-51ea-404a-b6f4-42d989f4153f",
       "IO Port 2"
     ],
     [
@@ -696,7 +696,23 @@
     ],
     [
       "c26708a4-6d93-4869-859d-a864def60f33",
-      "Ethernet"
+      "Ethernet port"
+    ],
+    [
+      "b4342169-d534-4702-a6c0-465d8c32ffd1",
+      "FPGA settings & programming"
+    ],
+    [
+      "3a676d5d-6f59-4798-95b1-cdd71242106d",
+      "Unused FPGA banks"
+    ],
+    [
+      "e245d26f-51a4-45f5-90da-15b495073622",
+      "Logic Channels"
+    ],
+    [
+      "f9f83eaa-12c3-4739-9e17-8a690dbc64a8",
+      "Time synchronization"
     ]
   ],
   "text_variables": {}
