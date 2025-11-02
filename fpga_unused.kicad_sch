@@ -5658,7 +5658,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "ECP5U_25_CABGA256"
+		(property "Value" "ECP5U_25"
 			(at 123.19 102.8699 0)
 			(effects
 				(font
@@ -5706,7 +5706,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C5272996"
+		(property "LCSC" ""
 			(at 73.66 69.85 0)
 			(effects
 				(font
@@ -7070,7 +7070,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "ECP5U_25_CABGA256"
+		(property "Value" "ECP5U_25"
 			(at 204.47 102.8699 0)
 			(effects
 				(font
@@ -7118,7 +7118,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C5272996"
+		(property "LCSC" ""
 			(at 154.94 69.85 0)
 			(effects
 				(font

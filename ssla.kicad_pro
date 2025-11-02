@@ -550,7 +550,7 @@
           "group_by": false,
           "label": "Footprint",
           "name": "Footprint",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
@@ -684,11 +684,11 @@
     ],
     [
       "9d1c2f5f-275a-4aa0-81bb-3f9469cfb4b2",
-      "IO Port 1"
+      "Buffer 1"
     ],
     [
       "6e0ab4a5-51ea-404a-b6f4-42d989f4153f",
-      "IO Port 2"
+      "Buffer 2"
     ],
     [
       "ce89ad91-22eb-444e-a9cc-c9108b1f0d21",
@@ -696,7 +696,7 @@
     ],
     [
       "c26708a4-6d93-4869-859d-a864def60f33",
-      "Ethernet port"
+      "Ethernet"
     ],
     [
       "b4342169-d534-4702-a6c0-465d8c32ffd1",

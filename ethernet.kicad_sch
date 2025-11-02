@@ -1803,21 +1803,19 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "R"
-				(at 0.762 0.508 0)
+				(at 0 0 90)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1.016 1.016)
 					)
-					(justify left)
 				)
 			)
 			(property "Value" "R_Small"
-				(at 0.762 -1.016 0)
+				(at 1.778 0 90)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
 			(property "Footprint" ""
@@ -7478,10 +7476,106 @@
 			)
 			(embedded_fonts no)
 		)
-	)
-	(bus_alias "ETH"
-		(members "TXEN" "TXD0" "TXD1" "RXD0" "RXD1" "CRS_DV" "REF_CLK" "RXER" "MDIO"
-			"MDC" "~{RST}"
+		(symbol "power:PWR_FLAG"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
 		)
 	)
 	(text_box "DESIGN NOTE\n\n100BASE-TX PHY, clocked from an 25 MHz oscillator that's shared with the FPGA."
@@ -7523,6 +7617,12 @@
 			(justify left top)
 		)
 		(uuid "89ec7581-4ad7-4076-9c66-603c39bc9dc1")
+	)
+	(junction
+		(at 111.76 53.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "321fa9e1-24e1-4e86-8e53-bc0c53f18b53")
 	)
 	(junction
 		(at 246.38 25.4)
@@ -7680,6 +7780,16 @@
 	)
 	(wire
 		(pts
+			(xy 165.1 87.63) (xy 170.18 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0f193630-6390-42e2-a94b-30a764e45691")
+	)
+	(wire
+		(pts
 			(xy 40.64 86.36) (xy 27.94 86.36)
 		)
 		(stroke
@@ -7687,6 +7797,26 @@
 			(type default)
 		)
 		(uuid "12a4eb92-1ce8-4a66-b0fc-18e5cf9334e5")
+	)
+	(wire
+		(pts
+			(xy 146.05 74.93) (xy 160.02 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "143e4f7b-a1eb-4194-aa52-f5aaa22070cf")
+	)
+	(wire
+		(pts
+			(xy 146.05 90.17) (xy 160.02 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1696a743-49f1-437d-9a32-0920f1dae18b")
 	)
 	(wire
 		(pts
@@ -7767,6 +7897,26 @@
 			(type default)
 		)
 		(uuid "2898c933-9c5b-43fa-a9fe-796ca77ee7e3")
+	)
+	(wire
+		(pts
+			(xy 165.1 74.93) (xy 170.18 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e1417a9-b51a-47ff-9034-f3521fedc949")
+	)
+	(wire
+		(pts
+			(xy 165.1 72.39) (xy 170.18 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4261a347-34d7-43ed-9507-ad8e6937ee0b")
 	)
 	(wire
 		(pts
@@ -7900,6 +8050,26 @@
 	)
 	(wire
 		(pts
+			(xy 165.1 92.71) (xy 170.18 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "69fb725d-23b2-455e-9c8f-1fa18209b632")
+	)
+	(wire
+		(pts
+			(xy 146.05 72.39) (xy 160.02 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6bca1969-be3e-4e07-a9fb-ea06c7914cfa")
+	)
+	(wire
+		(pts
 			(xy 101.6 86.36) (xy 101.6 85.09)
 		)
 		(stroke
@@ -7907,6 +8077,16 @@
 			(type default)
 		)
 		(uuid "6ed94aea-b9fa-42ae-b87f-9414dc1341d5")
+	)
+	(wire
+		(pts
+			(xy 146.05 85.09) (xy 160.02 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71b99fe4-1e16-4678-bc15-222a4821fedc")
 	)
 	(wire
 		(pts
@@ -7947,6 +8127,16 @@
 			(type default)
 		)
 		(uuid "89c63bdc-b1a4-4bf6-ba7d-0657c6c1000e")
+	)
+	(wire
+		(pts
+			(xy 165.1 90.17) (xy 170.18 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ac4482f-e992-4123-b366-b38322514700")
 	)
 	(wire
 		(pts
@@ -8000,6 +8190,16 @@
 	)
 	(wire
 		(pts
+			(xy 165.1 85.09) (xy 170.18 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a1d3ae3-909a-4a9f-8074-e882e2c9a032")
+	)
+	(wire
+		(pts
 			(xy 35.56 100.33) (xy 35.56 83.82)
 		)
 		(stroke
@@ -8030,6 +8230,16 @@
 	)
 	(wire
 		(pts
+			(xy 165.1 77.47) (xy 170.18 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7d6c5d5-2220-439e-ae16-928d16f517dc")
+	)
+	(wire
+		(pts
 			(xy 106.68 53.34) (xy 109.22 53.34)
 		)
 		(stroke
@@ -8040,13 +8250,53 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 53.34) (xy 118.11 53.34)
+			(xy 146.05 82.55) (xy 160.02 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b277bc32-b5d4-48e7-83e5-27c0ed712921")
+	)
+	(wire
+		(pts
+			(xy 109.22 53.34) (xy 111.76 53.34)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "bbe2d328-14ce-40eb-9ecc-4769e5775567")
+	)
+	(wire
+		(pts
+			(xy 146.05 77.47) (xy 160.02 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc9508e3-aa3a-4300-ba41-b03a947d002f")
+	)
+	(wire
+		(pts
+			(xy 111.76 53.34) (xy 118.11 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c65f1107-e51e-4896-90ad-c97839336906")
+	)
+	(wire
+		(pts
+			(xy 165.1 82.55) (xy 170.18 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ca2a74fa-95c9-4c87-8282-0713919af15e")
 	)
 	(wire
 		(pts
@@ -8087,6 +8337,16 @@
 			(type default)
 		)
 		(uuid "e0183c33-a457-4cec-bcd8-1c2b72d41289")
+	)
+	(wire
+		(pts
+			(xy 146.05 92.71) (xy 160.02 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e14d6212-4f87-43b5-b22a-d39ff661bdec")
 	)
 	(wire
 		(pts
@@ -8137,6 +8397,16 @@
 			(type default)
 		)
 		(uuid "f70f2baa-f8c9-49d7-b238-56d5f0ad786a")
+	)
+	(wire
+		(pts
+			(xy 146.05 87.63) (xy 160.02 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f718454a-4930-4dbc-b6c1-ff6c33b5a2f1")
 	)
 	(wire
 		(pts
@@ -8228,7 +8498,7 @@
 		)
 		(uuid "46898db9-3721-4d44-9e5f-487aa5ab49f7")
 	)
-	(label "ETH.RXD1"
+	(label "ETH.RXD1_{F}"
 		(at 222.25 125.73 180)
 		(effects
 			(font
@@ -8237,6 +8507,46 @@
 			(justify right bottom)
 		)
 		(uuid "4f5a3620-8eb8-4c0a-a471-37155a42f5a2")
+	)
+	(label "ETH.RXD0_{F}"
+		(at 170.18 82.55 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5885ab27-a94d-4cda-9260-00201bf90514")
+	)
+	(label "ETH.~{RST}"
+		(at 97.79 129.54 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5c81d928-86e2-4612-8bed-c961863b1158")
+	)
+	(label "ETH.CRS_DV_{F}"
+		(at 170.18 87.63 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "69777468-8090-4940-aa74-43b6780126ef")
+	)
+	(label "ETH.TXD1_{F}"
+		(at 170.18 77.47 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "72dc67fe-86cc-4384-abd2-b99ad3aef232")
 	)
 	(label "ETH.CRS_DV"
 		(at 146.05 87.63 0)
@@ -8258,7 +8568,17 @@
 		)
 		(uuid "7ff5d4c0-e228-4909-8ca2-67ee1bb40517")
 	)
-	(label "ETH.RXD0"
+	(label "ETH.RXD1_{F}"
+		(at 170.18 85.09 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "87b54509-7a79-4238-b8fa-7ab4f53c1c85")
+	)
+	(label "ETH.RXD0_{F}"
 		(at 222.25 102.87 180)
 		(effects
 			(font
@@ -8288,7 +8608,7 @@
 		)
 		(uuid "92208755-94b3-4b80-ad8c-81f4c78c4af0")
 	)
-	(label "ETH.RXER"
+	(label "ETH.RXER_{F}"
 		(at 222.25 133.35 180)
 		(effects
 			(font
@@ -8348,7 +8668,7 @@
 		)
 		(uuid "a3dfe080-409d-4ea8-83d5-9df6ffd3dba5")
 	)
-	(label "ETH.TXD1"
+	(label "ETH.TXD1_{F}"
 		(at 222.25 100.33 180)
 		(effects
 			(font
@@ -8368,7 +8688,7 @@
 		)
 		(uuid "ab09b703-f33b-428d-9cb9-7ed3721e86a6")
 	)
-	(label "ETH.REF_CLK"
+	(label "ETH.REF_CLK_{F}"
 		(at 222.25 59.69 180)
 		(effects
 			(font
@@ -8428,7 +8748,37 @@
 		)
 		(uuid "c854830d-477b-49fa-af53-60a43df95d1f")
 	)
-	(label "ETH.TXD0"
+	(label "ETH.TXD0_{F}"
+		(at 170.18 74.93 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cd66c7e6-d36a-4ccf-bdc6-28aec2ab8f36")
+	)
+	(label "ETH.TXEN_{F}"
+		(at 170.18 72.39 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d0eaef1a-89f1-4595-9076-6cf010b24126")
+	)
+	(label "ETH.REF_CLK_{F}"
+		(at 170.18 90.17 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "da44ce90-364e-4ee9-afe0-b9919d7b893f")
+	)
+	(label "ETH.TXD0_{F}"
 		(at 222.25 77.47 180)
 		(effects
 			(font
@@ -8448,7 +8798,7 @@
 		)
 		(uuid "e6682a5c-dff1-4ab3-9dba-bdeb9dc4db17")
 	)
-	(label "ETH.CRS_DV"
+	(label "ETH.CRS_DV_{F}"
 		(at 222.25 128.27 180)
 		(effects
 			(font
@@ -8478,7 +8828,17 @@
 		)
 		(uuid "f05df657-9ea4-4086-a752-8290a383100b")
 	)
-	(label "ETH.TXEN"
+	(label "ETH.RXER_{F}"
+		(at 170.18 92.71 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f245aa0e-571c-4446-b2d0-a59fbef35b1c")
+	)
+	(label "ETH.TXEN_{F}"
 		(at 222.25 74.93 180)
 		(effects
 			(font
@@ -8497,16 +8857,6 @@
 			(justify right bottom)
 		)
 		(uuid "f84e1294-491a-4b53-8817-6e15594220a5")
-	)
-	(label "~{ETH.RST}"
-		(at 97.79 129.54 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "f8a9ee31-b44e-4d36-b4d6-5cb3c8f1f3a3")
 	)
 	(hierarchical_label "FPGA.25MHz_CLOCK_IN"
 		(shape input)
@@ -8529,6 +8879,102 @@
 			(justify left)
 		)
 		(uuid "de16ac9a-e3ed-4d38-8433-7a32cb0e9fd5")
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 162.56 92.71 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "063a27df-9ae9-4a48-b8bb-0adf5dc8fc47")
+		(property "Reference" "R515"
+			(at 164.592 91.694 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "33"
+			(at 162.56 92.71 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 162.56 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 162.56 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 162.56 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFPN" ""
+			(at 162.56 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Specification" ""
+			(at 162.56 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25105"
+			(at 162.56 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "0a07813a-f051-4589-b9d3-6ab55dc0ad8c")
+		)
+		(pin "1"
+			(uuid "a70c523a-2374-492b-957e-6c5ce3eacd59")
+		)
+		(instances
+			(project "ssla"
+				(path "/2e0ddbb6-d322-4cea-9b13-783b04160595/c26708a4-6d93-4869-859d-a864def60f33"
+					(reference "R515")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Device:R_Small")
@@ -9883,6 +10329,198 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
+		(at 162.56 87.63 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "51931477-f559-4ad0-a68e-46da6c02b3a9")
+		(property "Reference" "R513"
+			(at 164.592 86.614 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "33"
+			(at 162.56 87.63 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 162.56 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 162.56 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 162.56 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFPN" ""
+			(at 162.56 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Specification" ""
+			(at 162.56 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25105"
+			(at 162.56 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "2b4307d2-bf6e-4813-881f-a3fb051b7c16")
+		)
+		(pin "1"
+			(uuid "6d27181e-43d2-4947-829c-7f9375477c1a")
+		)
+		(instances
+			(project "ssla"
+				(path "/2e0ddbb6-d322-4cea-9b13-783b04160595/c26708a4-6d93-4869-859d-a864def60f33"
+					(reference "R513")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 162.56 85.09 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "544ec6cb-6267-4264-a600-5585a2e368c1")
+		(property "Reference" "R512"
+			(at 164.592 84.074 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "33"
+			(at 162.56 85.09 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 162.56 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 162.56 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 162.56 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFPN" ""
+			(at 162.56 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Specification" ""
+			(at 162.56 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25105"
+			(at 162.56 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "8389af89-264b-45ed-91ef-3a4a25ef3f0a")
+		)
+		(pin "1"
+			(uuid "e60689b8-9ba3-4081-bca1-1fa6b82372e2")
+		)
+		(instances
+			(project "ssla"
+				(path "/2e0ddbb6-d322-4cea-9b13-783b04160595/c26708a4-6d93-4869-859d-a864def60f33"
+					(reference "R512")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
 		(at 27.94 78.74 0)
 		(mirror x)
 		(unit 1)
@@ -9973,6 +10611,198 @@
 			(project "ssla"
 				(path "/2e0ddbb6-d322-4cea-9b13-783b04160595/c26708a4-6d93-4869-859d-a864def60f33"
 					(reference "R501")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 162.56 72.39 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5fbb99c8-6ab0-4318-ae50-49ca92283e9e")
+		(property "Reference" "R508"
+			(at 164.592 71.374 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "33"
+			(at 162.56 72.39 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 162.56 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 162.56 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 162.56 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFPN" ""
+			(at 162.56 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Specification" ""
+			(at 162.56 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25105"
+			(at 162.56 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ea1b5676-a125-4020-aac6-afe5f45c036a")
+		)
+		(pin "1"
+			(uuid "14b18735-06d0-449e-b6ad-70ac6099a8e6")
+		)
+		(instances
+			(project "ssla"
+				(path "/2e0ddbb6-d322-4cea-9b13-783b04160595/c26708a4-6d93-4869-859d-a864def60f33"
+					(reference "R508")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 162.56 82.55 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "790d8941-28f7-4182-b00b-06513b994cfb")
+		(property "Reference" "R511"
+			(at 164.592 81.534 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "33"
+			(at 162.56 82.55 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 162.56 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 162.56 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 162.56 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFPN" ""
+			(at 162.56 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Specification" ""
+			(at 162.56 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25105"
+			(at 162.56 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a8ec1067-d3e5-4363-8ddb-6c2ce6d5a703")
+		)
+		(pin "1"
+			(uuid "0ba2fb97-b2af-4ba6-be32-8d18aea894e7")
+		)
+		(instances
+			(project "ssla"
+				(path "/2e0ddbb6-d322-4cea-9b13-783b04160595/c26708a4-6d93-4869-859d-a864def60f33"
+					(reference "R511")
 					(unit 1)
 				)
 			)
@@ -10654,6 +11484,102 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small")
+		(at 162.56 77.47 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a26928d6-afdd-4094-bb7f-06c22674ac60")
+		(property "Reference" "R510"
+			(at 164.592 76.454 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "33"
+			(at 162.56 77.47 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 162.56 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 162.56 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 162.56 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFPN" ""
+			(at 162.56 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Specification" ""
+			(at 162.56 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25105"
+			(at 162.56 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e9b97cd9-c1aa-44bf-8213-04ecd302c507")
+		)
+		(pin "1"
+			(uuid "11312945-e959-4b58-9189-70734d6bf04e")
+		)
+		(instances
+			(project "ssla"
+				(path "/2e0ddbb6-d322-4cea-9b13-783b04160595/c26708a4-6d93-4869-859d-a864def60f33"
+					(reference "R510")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 86.36 60.96 0)
 		(mirror y)
@@ -10945,6 +11871,102 @@
 			(project "ssla"
 				(path "/2e0ddbb6-d322-4cea-9b13-783b04160595/c26708a4-6d93-4869-859d-a864def60f33"
 					(reference "#PWR0512")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 162.56 74.93 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b60b291c-4c74-43b0-be0d-6fc4e3811833")
+		(property "Reference" "R509"
+			(at 164.592 73.914 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "33"
+			(at 162.56 74.93 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 162.56 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 162.56 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 162.56 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFPN" ""
+			(at 162.56 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Specification" ""
+			(at 162.56 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25105"
+			(at 162.56 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d3fb4807-31ef-44f1-bbdd-dbfd34f9b27f")
+		)
+		(pin "1"
+			(uuid "2076303c-08d6-4b59-b90b-fa57c54e35c2")
+		)
+		(instances
+			(project "ssla"
+				(path "/2e0ddbb6-d322-4cea-9b13-783b04160595/c26708a4-6d93-4869-859d-a864def60f33"
+					(reference "R509")
 					(unit 1)
 				)
 			)
@@ -11674,7 +12696,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "ECP5U_25_CABGA256"
+		(property "Value" "ECP5U_25"
 			(at 259.08 87.6299 0)
 			(effects
 				(font
@@ -11722,7 +12744,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C5272996"
+		(property "LCSC" ""
 			(at 222.25 54.61 0)
 			(effects
 				(font
@@ -12612,6 +13634,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 111.76 53.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e12f0664-e8bd-41bc-afbc-8f2dc3356f0e")
+		(property "Reference" "#FLG0501"
+			(at 111.76 51.435 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 111.76 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 111.76 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 111.76 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 111.76 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d0c84a0f-ae23-4ddd-93fe-cec3b82f1fa2")
+		)
+		(instances
+			(project ""
+				(path "/2e0ddbb6-d322-4cea-9b13-783b04160595/c26708a4-6d93-4869-859d-a864def60f33"
+					(reference "#FLG0501")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small")
 		(at 95.25 138.43 90)
 		(unit 1)
@@ -12867,6 +13956,102 @@
 			(project "ssla"
 				(path "/2e0ddbb6-d322-4cea-9b13-783b04160595/c26708a4-6d93-4869-859d-a864def60f33"
 					(reference "C508")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 162.56 90.17 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fb302ac9-5cd6-4184-ac08-a79af4648883")
+		(property "Reference" "R514"
+			(at 164.592 89.154 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "33"
+			(at 162.56 90.17 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 162.56 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 162.56 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 162.56 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFPN" ""
+			(at 162.56 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Specification" ""
+			(at 162.56 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25105"
+			(at 162.56 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "8d609134-7487-4d1d-8b18-de118b441f23")
+		)
+		(pin "1"
+			(uuid "819ccd81-37d0-45eb-8032-71339ce285f2")
+		)
+		(instances
+			(project "ssla"
+				(path "/2e0ddbb6-d322-4cea-9b13-783b04160595/c26708a4-6d93-4869-859d-a864def60f33"
+					(reference "R514")
 					(unit 1)
 				)
 			)

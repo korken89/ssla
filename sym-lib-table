@@ -3,4 +3,5 @@
   (lib (name "Lattice_ECP5_FPGA")(type "KiCad")(uri "${KIPRJMOD}/Lattice_ECP5_FPGA.kicad_sym")(options "")(descr ""))
   (lib (name "RTL8211F-CG")(type "KiCad")(uri "${KIPRJMOD}/RTL8211F-CG.kicad_sym")(options "")(descr ""))
   (lib (name "interface_esd")(type "KiCad")(uri "${KIPRJMOD}/interface_esd.kicad_sym")(options "")(descr ""))
+  (lib (name "buffer")(type "KiCad")(uri "${KIPRJMOD}/buffer.kicad_sym")(options "")(descr ""))
 )

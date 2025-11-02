@@ -6644,7 +6644,7 @@
 		(uuid "8cbb8707-41cb-4a3e-a882-29ca1963f2f5")
 	)
 	(label "PORT1_I[0..15]"
-		(at 102.8108 29.1718 0)
+		(at 102.87 27.94 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7550,7 +7550,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "ECP5U_25_CABGA256"
+		(property "Value" "ECP5U_25"
 			(at 166.37 96.5199 0)
 			(effects
 				(font
@@ -7598,7 +7598,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C5272996"
+		(property "LCSC" ""
 			(at 116.84 63.5 0)
 			(effects
 				(font
@@ -8737,7 +8737,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "ECP5U_25_CABGA256"
+		(property "Value" "ECP5U_25"
 			(at 261.62 96.5199 0)
 			(effects
 				(font
@@ -8785,7 +8785,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C5272996"
+		(property "LCSC" ""
 			(at 212.09 63.5 0)
 			(effects
 				(font
@@ -9757,7 +9757,7 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "6e0ab4a5-51ea-404a-b6f4-42d989f4153f")
-		(property "Sheetname" "IO Port 2"
+		(property "Sheetname" "Buffer 2"
 			(at 80.01 45.0084 0)
 			(effects
 				(font
@@ -9775,7 +9775,7 @@
 				(justify left top)
 			)
 		)
-		(pin "I[0..15]" input
+		(pin "I[0..15]" output
 			(at 100.33 50.8 0)
 			(uuid "b41ab3bd-6432-4904-af32-ce0369d25530")
 			(effects
@@ -9819,7 +9819,7 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "9d1c2f5f-275a-4aa0-81bb-3f9469cfb4b2")
-		(property "Sheetname" "IO Port 1"
+		(property "Sheetname" "Buffer 1"
 			(at 80.01 22.1484 0)
 			(effects
 				(font
@@ -9837,7 +9837,7 @@
 				(justify left top)
 			)
 		)
-		(pin "I[0..15]" input
+		(pin "I[0..15]" output
 			(at 100.33 27.94 0)
 			(uuid "bafd6fa8-f32b-4dd1-b57f-4defa7b00560")
 			(effects

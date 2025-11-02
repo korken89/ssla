@@ -319,21 +319,19 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "R"
-				(at 0.762 0.508 0)
+				(at 0 0 90)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1.016 1.016)
 					)
-					(justify left)
 				)
 			)
 			(property "Value" "R_Small"
-				(at 0.762 -1.016 0)
+				(at 1.778 0 90)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
 			(property "Footprint" ""
@@ -612,37 +610,41 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "dc_dc_regulators:TPS62A01"
+		(symbol "Regulator_Switching:TPS62A01ADRL"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "U"
-				(at 0 3.81 0)
+				(at -5.08 6.35 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
-			(property "Value" "TPS62A01"
-				(at 0 1.27 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "sot:SOT-563"
+			(property "Value" "TPS62A01ADRL"
 				(at 0 6.35 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-563"
+				(at 1.27 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(justify left)
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps62a01.pdf"
-				(at 0 8.89 0)
+			(property "Datasheet" "https://www.ti.com/lit/gpn/tps62a01a"
+				(at -6.35 11.43 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -650,7 +652,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" ""
+			(property "Description" "High Efficiency Synchronous Buck Converter with forced PWM, Adjustable Output 0.6V-5.5V, 1A, Power Good, Enable, SOT-563"
 				(at 0 0 0)
 				(effects
 					(font
@@ -659,20 +661,40 @@
 					(hide yes)
 				)
 			)
-			(symbol "TPS62A01_1_1"
+			(property "ki_keywords" "Step-Down DC-DC Regulator"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOT?563*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TPS62A01ADRL_0_1"
 				(rectangle
-					(start -6.35 0)
-					(end 6.35 -12.7)
+					(start -5.08 5.08)
+					(end 5.08 -5.08)
 					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
 						(type background)
 					)
 				)
+			)
+			(symbol "TPS62A01ADRL_1_1"
 				(pin power_in line
-					(at -8.89 -2.54 0)
+					(at -7.62 2.54 0)
 					(length 2.54)
 					(name "VIN"
 						(effects
@@ -689,8 +711,8 @@
 						)
 					)
 				)
-				(pin passive line
-					(at -8.89 -7.62 0)
+				(pin input line
+					(at -7.62 0 0)
 					(length 2.54)
 					(name "EN"
 						(effects
@@ -707,26 +729,8 @@
 						)
 					)
 				)
-				(pin passive line
-					(at -8.89 -10.16 0)
-					(length 2.54)
-					(name "PG"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin power_in line
-					(at 0 -15.24 90)
+					(at 0 -7.62 90)
 					(length 2.54)
 					(name "GND"
 						(effects
@@ -743,8 +747,8 @@
 						)
 					)
 				)
-				(pin passive line
-					(at 8.89 -2.54 180)
+				(pin power_out line
+					(at 7.62 2.54 180)
 					(length 2.54)
 					(name "SW"
 						(effects
@@ -761,8 +765,8 @@
 						)
 					)
 				)
-				(pin passive line
-					(at 8.89 -10.16 180)
+				(pin input line
+					(at 7.62 0 180)
 					(length 2.54)
 					(name "FB"
 						(effects
@@ -772,6 +776,24 @@
 						)
 					)
 					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin open_collector line
+					(at 7.62 -2.54 180)
+					(length 2.54)
+					(name "PG"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1534,12 +1556,6 @@
 		(uuid "50c9974e-90e7-46f4-86ec-c84b2f225733")
 	)
 	(junction
-		(at 133.35 78.74)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "54303a98-0cc7-43d1-83cd-169ffea3fabe")
-	)
-	(junction
 		(at 168.91 60.96)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1570,12 +1586,6 @@
 		(uuid "6d2bb5d5-ae5f-439d-b731-90e769e34a60")
 	)
 	(junction
-		(at 133.35 53.34)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7fba7d34-8ab9-465d-b06d-f3470c6ef6f0")
-	)
-	(junction
 		(at 125.73 104.14)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1586,6 +1596,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8b8b7cd8-64d4-4581-aa28-8afe6d65e80e")
+	)
+	(junction
+		(at 135.89 53.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9964f3f5-889a-4dd5-89b8-b0ef6756f418")
 	)
 	(junction
 		(at 168.91 78.74)
@@ -1606,10 +1622,10 @@
 		(uuid "aa6309f5-1d2b-4769-8288-ff0a7ad52b80")
 	)
 	(junction
-		(at 133.35 104.14)
+		(at 135.89 104.14)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "d18f8fe8-e736-474b-8cb3-0271f329efaf")
+		(uuid "b73f344f-5efb-4656-bfb3-32f3aecbf83c")
 	)
 	(junction
 		(at 134.62 128.27)
@@ -1641,17 +1657,23 @@
 		(color 0 0 0 0)
 		(uuid "e469de6e-82e0-483b-9c57-1b69641e6aa8")
 	)
-	(no_connect
-		(at 135.89 86.36)
-		(uuid "4609c8ea-4cdd-450b-8e11-5ea139fbbdc9")
+	(junction
+		(at 135.89 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f7be15c4-32a8-4c32-9008-470436ce8664")
 	)
 	(no_connect
-		(at 135.89 111.76)
-		(uuid "8fda758b-3066-4f03-a347-21ab7f6a9ade")
+		(at 152.4 109.22)
+		(uuid "128ba125-ddab-4d9d-b7f3-944f2fdbd8d5")
 	)
 	(no_connect
-		(at 135.89 60.96)
-		(uuid "968186dc-a19a-428e-8529-590d34c1568f")
+		(at 152.4 83.82)
+		(uuid "610bfaf3-0d75-4736-9e98-5fcf0bfeccb4")
+	)
+	(no_connect
+		(at 152.4 58.42)
+		(uuid "81b0decd-18a1-4649-843a-8cc8cbe6e39e")
 	)
 	(wire
 		(pts
@@ -1665,6 +1687,16 @@
 	)
 	(wire
 		(pts
+			(xy 160.02 106.68) (xy 160.02 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0152f30f-809d-4943-b2e2-bbba28ca59db")
+	)
+	(wire
+		(pts
 			(xy 191.77 104.14) (xy 200.66 104.14)
 		)
 		(stroke
@@ -1675,7 +1707,7 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 78.74) (xy 135.89 78.74)
+			(xy 125.73 78.74) (xy 135.89 78.74)
 		)
 		(stroke
 			(width 0)
@@ -1745,13 +1777,23 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 53.34) (xy 133.35 58.42)
+			(xy 160.02 81.28) (xy 160.02 86.36)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "18bdba27-d9da-449a-b6af-d22040c37347")
+		(uuid "1776ef9f-5283-4a02-a7dd-06a09d813e5b")
+	)
+	(wire
+		(pts
+			(xy 135.89 53.34) (xy 137.16 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ac953c0-fe25-46f7-85cd-d668d874b528")
 	)
 	(wire
 		(pts
@@ -1775,13 +1817,13 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 78.74) (xy 153.67 78.74)
+			(xy 152.4 55.88) (xy 160.02 55.88)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1ff02074-38a8-4883-be97-d2a06176e341")
+		(uuid "255581e1-0a86-4678-9963-543cc2fe9729")
 	)
 	(wire
 		(pts
@@ -1795,13 +1837,23 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 53.34) (xy 135.89 53.34)
+			(xy 125.73 53.34) (xy 135.89 53.34)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "2c2f4c48-1c07-4f6c-97d4-49abe672018a")
+	)
+	(wire
+		(pts
+			(xy 160.02 55.88) (xy 160.02 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "343c8622-ab21-48cf-8d1d-6b38a9fd4bca")
 	)
 	(wire
 		(pts
@@ -1812,6 +1864,16 @@
 			(type default)
 		)
 		(uuid "364408e8-8c6f-464c-8375-cb311b7bafcc")
+	)
+	(wire
+		(pts
+			(xy 152.4 106.68) (xy 160.02 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c6ce767-af9c-4a36-b60e-0f49492bc3f9")
 	)
 	(wire
 		(pts
@@ -1845,16 +1907,6 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 109.22) (xy 135.89 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "46e06af7-87c1-457f-8e8a-141e84e6170d")
-	)
-	(wire
-		(pts
 			(xy 123.19 128.27) (xy 125.73 128.27)
 		)
 		(stroke
@@ -1865,43 +1917,13 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 104.14) (xy 153.67 104.14)
+			(xy 137.16 55.88) (xy 135.89 55.88)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5174acf7-41fe-403e-8b29-207097b73d6e")
-	)
-	(wire
-		(pts
-			(xy 125.73 78.74) (xy 133.35 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "522b7b77-0812-4264-b853-f8d1781d16a1")
-	)
-	(wire
-		(pts
-			(xy 153.67 111.76) (xy 168.91 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "56e097e5-f808-451b-88e5-d46a6b6908e0")
-	)
-	(wire
-		(pts
-			(xy 125.73 53.34) (xy 133.35 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "59cf5b56-7793-4d81-8b78-589eb5e4b9f0")
+		(uuid "58146e6e-1626-4557-9b9a-75b7a772417f")
 	)
 	(wire
 		(pts
@@ -1925,16 +1947,6 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 78.74) (xy 133.35 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6075817e-a5e1-4f54-b94a-093b27547fb4")
-	)
-	(wire
-		(pts
 			(xy 156.21 128.27) (xy 156.21 130.81)
 		)
 		(stroke
@@ -1955,26 +1967,6 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 60.96) (xy 168.91 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "690f921f-2a7c-41ff-8855-75787192a6e6")
-	)
-	(wire
-		(pts
-			(xy 160.02 53.34) (xy 153.67 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "69c7b792-9945-4108-be13-3b5a43f9dbf7")
-	)
-	(wire
-		(pts
 			(xy 168.91 86.36) (xy 181.61 86.36)
 		)
 		(stroke
@@ -1982,6 +1974,26 @@
 			(type default)
 		)
 		(uuid "6ba36377-185a-4a04-b4ca-ae29327c30d3")
+	)
+	(wire
+		(pts
+			(xy 160.02 111.76) (xy 168.91 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e02acd2-b4fa-490a-86ef-a5f9614b5dab")
+	)
+	(wire
+		(pts
+			(xy 137.16 106.68) (xy 135.89 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "750aabc2-e4c0-46c2-929e-edcceb56f593")
 	)
 	(wire
 		(pts
@@ -1995,6 +2007,16 @@
 	)
 	(wire
 		(pts
+			(xy 135.89 106.68) (xy 135.89 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a4750a0-8897-41bd-808a-5f1f4b64f04e")
+	)
+	(wire
+		(pts
 			(xy 134.62 130.81) (xy 137.16 130.81)
 		)
 		(stroke
@@ -2005,6 +2027,16 @@
 	)
 	(wire
 		(pts
+			(xy 152.4 104.14) (xy 160.02 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "82cdee6e-fd43-47a5-9416-400f94450825")
+	)
+	(wire
+		(pts
 			(xy 191.77 53.34) (xy 191.77 54.61)
 		)
 		(stroke
@@ -2012,16 +2044,6 @@
 			(type default)
 		)
 		(uuid "83777da2-a56c-4900-aee7-efd94801b877")
-	)
-	(wire
-		(pts
-			(xy 133.35 58.42) (xy 135.89 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8567e9dc-2c06-463f-854f-c488808414cb")
 	)
 	(wire
 		(pts
@@ -2065,23 +2087,23 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 104.14) (xy 133.35 109.22)
+			(xy 135.89 81.28) (xy 135.89 78.74)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9062ba96-0c00-46c9-adad-4fd7c9126fe8")
+		(uuid "93bd7d89-eaa0-4bae-b41d-1401c91e2b76")
 	)
 	(wire
 		(pts
-			(xy 133.35 104.14) (xy 135.89 104.14)
+			(xy 152.4 53.34) (xy 160.02 53.34)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "90f4d561-f6e7-4049-9e03-97dcd8741644")
+		(uuid "93fcf655-9318-4a2b-a102-06bf050d3b2f")
 	)
 	(wire
 		(pts
@@ -2092,6 +2114,16 @@
 			(type default)
 		)
 		(uuid "9993810f-38d9-4c27-8314-52c916033f65")
+	)
+	(wire
+		(pts
+			(xy 160.02 60.96) (xy 168.91 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a75ca9e-9bdb-46ed-9e1e-08104c139ec6")
 	)
 	(wire
 		(pts
@@ -2115,7 +2147,27 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 104.14) (xy 133.35 104.14)
+			(xy 152.4 78.74) (xy 160.02 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a2dd8b8c-3559-4697-b583-757a76487d62")
+	)
+	(wire
+		(pts
+			(xy 135.89 55.88) (xy 135.89 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a57ed51f-13d1-4a3c-a53e-c82a674cbf09")
+	)
+	(wire
+		(pts
+			(xy 125.73 104.14) (xy 135.89 104.14)
 		)
 		(stroke
 			(width 0)
@@ -2152,16 +2204,6 @@
 			(type default)
 		)
 		(uuid "bc4227c5-667f-4935-a0a9-69adf1ec25eb")
-	)
-	(wire
-		(pts
-			(xy 153.67 86.36) (xy 168.91 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c59c482f-eab2-4601-9efa-f99c9c804565")
 	)
 	(wire
 		(pts
@@ -2215,6 +2257,16 @@
 	)
 	(wire
 		(pts
+			(xy 135.89 104.14) (xy 137.16 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c8e6105a-a857-4a7a-a74b-c8a4fe4f086f")
+	)
+	(wire
+		(pts
 			(xy 181.61 53.34) (xy 181.61 54.61)
 		)
 		(stroke
@@ -2232,6 +2284,16 @@
 			(type default)
 		)
 		(uuid "cbe3305c-7e01-4054-9eba-1176f416172c")
+	)
+	(wire
+		(pts
+			(xy 135.89 78.74) (xy 137.16 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd6309ef-2ca9-4301-bbca-d847a197759b")
 	)
 	(wire
 		(pts
@@ -2262,16 +2324,6 @@
 			(type default)
 		)
 		(uuid "d57066d8-b4fb-4eaf-a04e-76431c5931a2")
-	)
-	(wire
-		(pts
-			(xy 133.35 83.82) (xy 135.89 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d63480a4-7595-4a4b-96c1-b33e78b7f789")
 	)
 	(wire
 		(pts
@@ -2325,6 +2377,16 @@
 	)
 	(wire
 		(pts
+			(xy 160.02 86.36) (xy 168.91 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "df61c8ad-8aef-4b16-b0dd-1e37f25f07b6")
+	)
+	(wire
+		(pts
 			(xy 168.91 86.36) (xy 168.91 87.63)
 		)
 		(stroke
@@ -2375,6 +2437,16 @@
 	)
 	(wire
 		(pts
+			(xy 137.16 81.28) (xy 135.89 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f68df66c-6f36-45e9-bdc4-e9e1f6995a08")
+	)
+	(wire
+		(pts
 			(xy 181.61 78.74) (xy 181.61 80.01)
 		)
 		(stroke
@@ -2382,6 +2454,16 @@
 			(type default)
 		)
 		(uuid "f96fef32-9c19-49c4-b40f-0e5c9ab01112")
+	)
+	(wire
+		(pts
+			(xy 152.4 81.28) (xy 160.02 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb309cc5-02c2-445e-a37c-087ff8672b86")
 	)
 	(wire
 		(pts
@@ -2424,7 +2506,7 @@
 		(uuid "6c043c07-423d-4704-834d-31ef34e4e045")
 	)
 	(label "FB3V3"
-		(at 153.67 111.76 0)
+		(at 153.67 106.68 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2434,7 +2516,7 @@
 		(uuid "6f39563c-7fb4-46bb-9c60-0a9069f52095")
 	)
 	(label "FB1V1"
-		(at 153.67 60.96 0)
+		(at 153.67 55.88 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2443,8 +2525,8 @@
 		)
 		(uuid "7bb86374-8aa8-4b8b-92d3-bbe7045fdc0e")
 	)
-	(label "FB1V1"
-		(at 153.67 86.36 0)
+	(label "FB1V8"
+		(at 153.67 81.28 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2453,7 +2535,7 @@
 		)
 		(uuid "98ddd43d-2bdb-482d-a2f2-6cef533d38a1")
 	)
-	(label "SW1V1"
+	(label "SW1V8"
 		(at 153.67 78.74 0)
 		(effects
 			(font
@@ -2475,8 +2557,8 @@
 		(uuid "ef2efc14-d174-404d-aa3b-5b3ad8bb31d9")
 	)
 	(symbol
-		(lib_id "dc_dc_regulators:TPS62A01")
-		(at 144.78 101.6 0)
+		(lib_id "Regulator_Switching:TPS62A01ADRL")
+		(at 144.78 106.68 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2501,7 +2583,18 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-563"
-			(at 144.78 95.25 0)
+			(at 146.05 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/gpn/tps62a01a"
+			(at 138.43 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2509,17 +2602,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps62a01-q1.pdf"
-			(at 144.78 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 144.78 101.6 0)
+		(property "Description" "High Efficiency Synchronous Buck Converter with forced PWM, Adjustable Output 0.6V-5.5V, 1A, Power Good, Enable, SOT-563"
+			(at 144.78 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2528,7 +2612,7 @@
 			)
 		)
 		(property "MFPN" "TPS62A01ADRLR"
-			(at 144.78 101.6 0)
+			(at 144.78 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2537,7 +2621,7 @@
 			)
 		)
 		(property "Specification" ""
-			(at 144.78 101.6 0)
+			(at 144.78 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2546,7 +2630,7 @@
 			)
 		)
 		(property "LCSC" "C5181455"
-			(at 144.78 101.6 0)
+			(at 144.78 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2555,7 +2639,7 @@
 			)
 		)
 		(property "Comment" ""
-			(at 144.78 101.6 0)
+			(at 144.78 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3833,7 +3917,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 144.78 66.04 0)
+		(at 144.78 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3841,7 +3925,7 @@
 		(dnp no)
 		(uuid "5070b2f0-fb45-4494-b7d7-5cbfb4f99281")
 		(property "Reference" "#PWR0406"
-			(at 144.78 72.39 0)
+			(at 144.78 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3850,7 +3934,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 144.907 70.4342 0)
+			(at 144.907 67.8942 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3859,7 +3943,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 144.78 66.04 0)
+			(at 144.78 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3868,7 +3952,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 144.78 66.04 0)
+			(at 144.78 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3877,7 +3961,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 144.78 66.04 0)
+			(at 144.78 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4374,8 +4458,8 @@
 		)
 	)
 	(symbol
-		(lib_id "dc_dc_regulators:TPS62A01")
-		(at 144.78 76.2 0)
+		(lib_id "Regulator_Switching:TPS62A01ADRL")
+		(at 144.78 81.28 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4400,7 +4484,18 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-563"
-			(at 144.78 69.85 0)
+			(at 146.05 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/gpn/tps62a01a"
+			(at 138.43 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4408,17 +4503,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps62a01-q1.pdf"
-			(at 144.78 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 144.78 76.2 0)
+		(property "Description" "High Efficiency Synchronous Buck Converter with forced PWM, Adjustable Output 0.6V-5.5V, 1A, Power Good, Enable, SOT-563"
+			(at 144.78 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4427,7 +4513,7 @@
 			)
 		)
 		(property "MFPN" "TPS62A01ADRLR"
-			(at 144.78 76.2 0)
+			(at 144.78 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4436,7 +4522,7 @@
 			)
 		)
 		(property "Specification" ""
-			(at 144.78 76.2 0)
+			(at 144.78 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4445,7 +4531,7 @@
 			)
 		)
 		(property "LCSC" "C5181455"
-			(at 144.78 76.2 0)
+			(at 144.78 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4454,7 +4540,7 @@
 			)
 		)
 		(property "Comment" ""
-			(at 144.78 76.2 0)
+			(at 144.78 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4556,8 +4642,8 @@
 		)
 	)
 	(symbol
-		(lib_id "dc_dc_regulators:TPS62A01")
-		(at 144.78 50.8 0)
+		(lib_id "Regulator_Switching:TPS62A01ADRL")
+		(at 144.78 55.88 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4582,7 +4668,18 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-563"
-			(at 144.78 44.45 0)
+			(at 146.05 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/gpn/tps62a01a"
+			(at 138.43 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4590,17 +4687,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps62a01-q1.pdf"
-			(at 144.78 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 144.78 50.8 0)
+		(property "Description" "High Efficiency Synchronous Buck Converter with forced PWM, Adjustable Output 0.6V-5.5V, 1A, Power Good, Enable, SOT-563"
+			(at 144.78 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4609,7 +4697,7 @@
 			)
 		)
 		(property "MFPN" "TPS62A01ADRLR"
-			(at 144.78 50.8 0)
+			(at 144.78 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4618,7 +4706,7 @@
 			)
 		)
 		(property "Specification" ""
-			(at 144.78 50.8 0)
+			(at 144.78 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4627,7 +4715,7 @@
 			)
 		)
 		(property "LCSC" "C5181455"
-			(at 144.78 50.8 0)
+			(at 144.78 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4636,7 +4724,7 @@
 			)
 		)
 		(property "Comment" ""
-			(at 144.78 50.8 0)
+			(at 144.78 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4789,7 +4877,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 144.78 91.44 0)
+		(at 144.78 88.9 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4797,7 +4885,7 @@
 		(dnp no)
 		(uuid "7d6486f8-daf9-4da7-917e-0cb543116b3e")
 		(property "Reference" "#PWR0407"
-			(at 144.78 97.79 0)
+			(at 144.78 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4806,7 +4894,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 144.907 95.8342 0)
+			(at 144.907 93.2942 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4815,7 +4903,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 144.78 91.44 0)
+			(at 144.78 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4824,7 +4912,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 144.78 91.44 0)
+			(at 144.78 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4833,7 +4921,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 144.78 91.44 0)
+			(at 144.78 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5642,7 +5730,7 @@
 				)
 			)
 		)
-		(property "Value" "1.5u"
+		(property "Value" "1u"
 			(at 163.83 101.7524 90)
 			(effects
 				(font
@@ -5650,7 +5738,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_1008_2520Metric"
+		(property "Footprint" "Inductor_SMD:L_0805_2012Metric"
 			(at 163.83 104.14 0)
 			(effects
 				(font
@@ -5677,7 +5765,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFPN" "SRP2512A-1R5M"
+		(property "MFPN" "SRN2012T-1R0K"
 			(at 163.83 104.14 0)
 			(effects
 				(font
@@ -5704,7 +5792,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C2047523"
+		(property "LCSC" "C20770353"
 			(at 163.83 104.14 0)
 			(effects
 				(font
@@ -6017,7 +6105,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 144.78 116.84 0)
+		(at 144.78 114.3 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6025,7 +6113,7 @@
 		(dnp no)
 		(uuid "d0298d63-110b-409e-9cdb-c4c461473550")
 		(property "Reference" "#PWR0408"
-			(at 144.78 123.19 0)
+			(at 144.78 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6034,7 +6122,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 144.907 121.2342 0)
+			(at 144.907 118.6942 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6043,7 +6131,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 144.78 116.84 0)
+			(at 144.78 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6052,7 +6140,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 144.78 116.84 0)
+			(at 144.78 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6061,7 +6149,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 144.78 116.84 0)
+			(at 144.78 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6360,7 +6448,7 @@
 				)
 			)
 		)
-		(property "Value" "1.5u"
+		(property "Value" "1u"
 			(at 163.83 50.9524 90)
 			(effects
 				(font
@@ -6368,7 +6456,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_1008_2520Metric"
+		(property "Footprint" "Inductor_SMD:L_0805_2012Metric"
 			(at 163.83 53.34 0)
 			(effects
 				(font
@@ -6395,7 +6483,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFPN" "SRP2512A-1R5M"
+		(property "MFPN" "SRN2012T-1R0K"
 			(at 163.83 53.34 0)
 			(effects
 				(font
@@ -6422,25 +6510,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C2047523"
-			(at 163.83 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 163.83 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" ""
+		(property "LCSC" "C20770353"
 			(at 163.83 53.34 0)
 			(effects
 				(font
@@ -7022,7 +7092,7 @@
 				)
 			)
 		)
-		(property "Value" "1.5u"
+		(property "Value" "1u"
 			(at 163.83 76.3524 90)
 			(effects
 				(font
@@ -7030,7 +7100,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_1008_2520Metric"
+		(property "Footprint" "Inductor_SMD:L_0805_2012Metric"
 			(at 163.83 78.74 0)
 			(effects
 				(font
@@ -7057,7 +7127,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFPN" "SRP2512A-1R5M"
+		(property "MFPN" "SRN2012T-1R0K"
 			(at 163.83 78.74 0)
 			(effects
 				(font
@@ -7084,7 +7154,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C2047523"
+		(property "LCSC" "C20770353"
 			(at 163.83 78.74 0)
 			(effects
 				(font

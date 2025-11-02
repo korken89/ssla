@@ -5,7 +5,7 @@ def print_sorted_pads_by_net(pcb_path):
     pcb = pcbnew.LoadBoard(pcb_path)
 
     for footprint in pcb.GetFootprints():
-        if footprint.GetReference() == "U6":
+        if footprint.GetReference() == "U100":
             print(f"Component: {footprint.GetReference()} ({footprint.GetValue()})")
             
             pads_with_io_nets = []

@@ -307,21 +307,19 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "R"
-				(at 0.762 0.508 0)
+				(at 0 0 90)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1.016 1.016)
 					)
-					(justify left)
 				)
 			)
 			(property "Value" "R_Small"
-				(at 0.762 -1.016 0)
+				(at 1.778 0 90)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
 			(property "Footprint" ""
@@ -1119,13 +1117,13 @@
 		(uuid "0848493c-e879-49be-aca4-b71841b54f73")
 	)
 	(junction
-		(at 134.62 110.49)
+		(at 125.73 110.49)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "329c0532-e78e-4aa1-b1d0-b47e2aabb938")
 	)
 	(junction
-		(at 134.62 100.33)
+		(at 125.73 100.33)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "72d03bbe-f3c1-46a2-9aff-3b4ca710caa6")
@@ -1144,7 +1142,7 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 110.49) (xy 134.62 110.49)
+			(xy 133.35 110.49) (xy 137.16 110.49)
 		)
 		(stroke
 			(width 0)
@@ -1164,7 +1162,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 100.33) (xy 134.62 101.6)
+			(xy 125.73 100.33) (xy 125.73 101.6)
 		)
 		(stroke
 			(width 0)
@@ -1204,7 +1202,7 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 110.49) (xy 118.11 110.49)
+			(xy 106.68 110.49) (xy 125.73 110.49)
 		)
 		(stroke
 			(width 0)
@@ -1224,6 +1222,16 @@
 	)
 	(wire
 		(pts
+			(xy 125.73 100.33) (xy 128.27 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5fe435c5-d29a-48a2-8072-d513de6bc7a2")
+	)
+	(wire
+		(pts
 			(xy 162.56 86.36) (xy 147.32 86.36)
 		)
 		(stroke
@@ -1234,13 +1242,23 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 100.33) (xy 118.11 100.33)
+			(xy 106.68 100.33) (xy 125.73 100.33)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "921bbd01-23f2-47e5-a15d-9c08c4ed8d6b")
+	)
+	(wire
+		(pts
+			(xy 125.73 110.49) (xy 128.27 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "94c05e8b-ebee-482e-be1d-f77c72744d62")
 	)
 	(wire
 		(pts
@@ -1254,7 +1272,7 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 100.33) (xy 134.62 100.33)
+			(xy 133.35 100.33) (xy 137.16 100.33)
 		)
 		(stroke
 			(width 0)
@@ -1264,17 +1282,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 100.33) (xy 137.16 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d9691466-c457-421b-adfc-158837391f1c")
-	)
-	(wire
-		(pts
-			(xy 134.62 109.22) (xy 134.62 110.49)
+			(xy 125.73 109.22) (xy 125.73 110.49)
 		)
 		(stroke
 			(width 0)
@@ -1301,16 +1309,6 @@
 			(type default)
 		)
 		(uuid "efbd10ef-f114-45bc-b487-253832c96c87")
-	)
-	(wire
-		(pts
-			(xy 134.62 110.49) (xy 137.16 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f9587380-1925-4a69-a050-a4c443485f05")
 	)
 	(hierarchical_label "SYNC_IN"
 		(shape output)
@@ -1347,7 +1345,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 120.65 100.33 270)
+		(at 130.81 100.33 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1356,15 +1354,15 @@
 		(fields_autoplaced yes)
 		(uuid "18f45a35-dd5c-4431-ba57-881b9493fe1b")
 		(property "Reference" "R901"
-			(at 120.65 95.25 90)
+			(at 130.81 95.25 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "47"
-			(at 120.65 97.79 90)
+		(property "Value" "33"
+			(at 130.81 97.79 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1372,7 +1370,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 120.65 100.33 0)
+			(at 130.81 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1381,7 +1379,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 120.65 100.33 0)
+			(at 130.81 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1390,7 +1388,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 120.65 100.33 0)
+			(at 130.81 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1399,7 +1397,7 @@
 			)
 		)
 		(property "MFPN" ""
-			(at 120.65 100.33 0)
+			(at 130.81 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1408,7 +1406,7 @@
 			)
 		)
 		(property "Specification" ""
-			(at 120.65 100.33 0)
+			(at 130.81 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1416,8 +1414,8 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25118"
-			(at 120.65 100.33 0)
+		(property "LCSC" "C25105"
+			(at 130.81 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1510,7 +1508,7 @@
 	)
 	(symbol
 		(lib_id "Device:D_TVS")
-		(at 134.62 105.41 90)
+		(at 125.73 105.41 90)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1519,7 +1517,7 @@
 		(dnp no)
 		(uuid "764dca33-2ffc-4bda-871d-2f2dca39c586")
 		(property "Reference" "D901"
-			(at 132.08 104.1399 90)
+			(at 123.19 104.1399 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1528,7 +1526,7 @@
 			)
 		)
 		(property "Value" "CDSOD323-T03SC"
-			(at 132.08 106.6799 90)
+			(at 123.19 106.6799 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1537,7 +1535,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-323"
-			(at 134.62 105.41 0)
+			(at 125.73 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1546,7 +1544,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.bourns.com/docs/Product-Datasheets/CDSOD323-TxxSC.pdf"
-			(at 134.62 105.41 0)
+			(at 125.73 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1555,7 +1553,7 @@
 			)
 		)
 		(property "Description" "Bidirectional transient-voltage-suppression diode"
-			(at 134.62 105.41 0)
+			(at 125.73 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1564,7 +1562,7 @@
 			)
 		)
 		(property "MFPN" "CDSOD323-T03SC"
-			(at 134.62 105.41 0)
+			(at 125.73 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1573,7 +1571,7 @@
 			)
 		)
 		(property "LCSC" "C840638"
-			(at 134.62 105.41 0)
+			(at 125.73 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1695,7 +1693,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 120.65 110.49 270)
+		(at 130.81 110.49 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1704,15 +1702,15 @@
 		(fields_autoplaced yes)
 		(uuid "97bedb26-7532-42ad-aeef-0860710042bc")
 		(property "Reference" "R902"
-			(at 120.65 113.03 90)
+			(at 130.81 113.03 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "47"
-			(at 120.65 115.57 90)
+		(property "Value" "33"
+			(at 130.81 115.57 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1720,7 +1718,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 120.65 110.49 0)
+			(at 130.81 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1729,7 +1727,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 120.65 110.49 0)
+			(at 130.81 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1738,7 +1736,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 120.65 110.49 0)
+			(at 130.81 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1747,7 +1745,7 @@
 			)
 		)
 		(property "MFPN" ""
-			(at 120.65 110.49 0)
+			(at 130.81 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1756,7 +1754,7 @@
 			)
 		)
 		(property "Specification" ""
-			(at 120.65 110.49 0)
+			(at 130.81 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1764,8 +1762,8 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25118"
-			(at 120.65 110.49 0)
+		(property "LCSC" "C25105"
+			(at 130.81 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
