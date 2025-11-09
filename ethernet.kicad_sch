@@ -7685,10 +7685,6 @@
 		(uuid "0e980950-efa9-45a9-9616-f571ab0d65c7")
 	)
 	(no_connect
-		(at 222.25 80.01)
-		(uuid "17d9ea84-9dfc-4c38-875e-e00d20ced50e")
-	)
-	(no_connect
 		(at 222.25 57.15)
 		(uuid "1dd26b51-db0e-4cc0-ab93-b4af2270cdea")
 	)
@@ -7763,10 +7759,6 @@
 	(no_connect
 		(at 222.25 54.61)
 		(uuid "f8345d9b-80de-4fac-8b3a-6a2985eee262")
-	)
-	(no_connect
-		(at 222.25 62.23)
-		(uuid "fad7aa75-fb46-46ae-a762-fa9a7b93cc02")
 	)
 	(wire
 		(pts
@@ -8739,7 +8731,7 @@
 		(uuid "c7f34982-70c3-4ab5-95d8-c07a4fe48b36")
 	)
 	(label "ETH.MDC"
-		(at 222.25 115.57 180)
+		(at 222.25 80.01 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8809,7 +8801,7 @@
 		(uuid "e80517cf-3f37-4338-83f5-78d8c8e09038")
 	)
 	(label "ETH.MDIO"
-		(at 222.25 105.41 180)
+		(at 222.25 62.23 180)
 		(effects
 			(font
 				(size 1.27 1.27)
